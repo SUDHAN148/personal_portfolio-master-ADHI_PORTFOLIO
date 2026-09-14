@@ -4,7 +4,8 @@ import { useScroll, useSpring, useMotionValueEvent, motion, MotionValue } from "
 import { useEffect, useRef, ReactNode } from "react";
 
 interface ScrollyVideoProps {
-  src: string;
+  src: string;       // desktop/high-res video
+  srcMobile?: string; // optional lower-res video for small/touch screens
   children?: (progress: MotionValue<number>) => ReactNode;
 }
 
